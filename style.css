@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto',sans-serif;
+  background-image: url("images/hahaa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.header {
+    background-image: url("images/banner.jpg");
+    padding: 5px;
+    text-align: center;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* home, dishes, about */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    padding-left: 100px;
+	position: absolute;
+	width: 100%;
+
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+	width: 100px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: red;
+}
+
+
+/* body */
+.column {
+    float: left;
+    width: 30%;
+    padding: 30px;
+    margin-left: 40px;
+}
+.column2 {
+    float: left;
+    width: 40%;
+    padding: 20px;
+    margin-left: 90px;
+}
+.column5 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+.columnfull {
+    float: left;
+    width: 100%;
+    padding: 60px;
+    overflow-y: hidden;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+@media (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+    .columnfull {
+        width: 100%;
+    }
+    .column2 {
+        width: 100%;
+    }
+}
+
+/*Picture with title */
+.polaroid {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.container {
+  padding: 10px;
+}
+.container a:hover {
+    color: #9999ff;
+}
+
+
+
+/* footer */
+.footer {
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+section, nav {
+    padding: 1.5em 1em;
+    opacity: 1;
+}
+section.bg-black, nav.bg-black {
+    background: #111;
+    color: white;
+}
+
